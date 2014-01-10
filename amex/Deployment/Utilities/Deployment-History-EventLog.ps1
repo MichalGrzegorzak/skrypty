@@ -1,0 +1,1 @@
+Get-EventLog Application | Where-Object {$_.EventID -eq 666 -or $_.EventID -eq 667} | Format-Table TimeGenerated, Message -auto
